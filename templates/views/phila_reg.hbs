@@ -1,0 +1,23 @@
+{{>header}}
+  <h1>Already have an account</h1>
+  <a href="/phila_login">Login as Philanthropist</a>
+  <br>
+  <h1>Register as a New Philanthropist</h1>
+  <form action="/phila_reg" method="POST">
+    <input type="text" placeholder="Name" name="name">
+    <label for="name">Name</label>
+    <input type="text" placeholder="Email" name="email">
+    <label for="email">Email</label>
+    <input type="text" placeholder="Organization Name" name="org_name">
+    <label for="org_name">Organization Name</label>
+    <input type="number" placeholder="Phone No" name="ph_no">
+    <label for="ph_no">Phone Number</label>
+    <input type="text" placeholder="Favoured Field" name="fav_field">
+    <label for="fav_field">Favoured Field</label>
+    <input type="password" placeholder="Password" name="password">
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" name="c_password">
+    <label for="c_email">Confirm Password</label>
+    <input type="submit" value="phila_reg">
+  </form>
+{{>footer}}

@@ -1,0 +1,21 @@
+{{>header}}
+  <h1>Alredy have an account</h1>
+  <a href="/ngo_login">Login as a NGO</a>
+  <br>
+  <h1>Enter NGO Registration Details</h1>
+  <form action="/ngo_reg" method="POST">
+    <input type="text" placeholder="NGO Name" name="ngo_name">
+    <label for="ngo_name">NGO Name</label>
+    <input type="email" name="email" placeholder="NGO Email" id="">
+    <label for="email_name">NGO Email</label>
+    <input type="tel" name="ph_no" id="">
+    <label for="ph_no">NGO Phone No</label>
+    <input type="text" name="addr" placeholder="NGO Address">
+    <label for="addr">NGO Address</label>
+    <input type="text" name="state" placeholder="NGO State">
+    <label for="state">NGO State</label>
+    <input type="text" name="sector" placeholder="NGO sector">
+    <label for="sector">NGO Sector</label>
+    <input type="submit" name="nog_reg" id="">
+  </form>
+{{>footer}}
