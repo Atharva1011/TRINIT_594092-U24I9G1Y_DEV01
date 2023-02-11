@@ -1,21 +1,60 @@
 {{>header}}
-  <h1>Alredy have an account</h1>
-  <a href="/ngo_login">Login as a NGO</a>
-  <br>
-  <h1>Enter NGO Registration Details</h1>
-  <form action="/ngo_reg" method="POST">
-    <input type="text" placeholder="NGO Name" name="ngo_name">
-    <label for="ngo_name">NGO Name</label>
-    <input type="email" name="email" placeholder="NGO Email" id="">
-    <label for="email_name">NGO Email</label>
-    <input type="tel" name="ph_no" id="">
-    <label for="ph_no">NGO Phone No</label>
-    <input type="text" name="addr" placeholder="NGO Address">
-    <label for="addr">NGO Address</label>
-    <input type="text" name="state" placeholder="NGO State">
-    <label for="state">NGO State</label>
-    <input type="text" name="sector" placeholder="NGO sector">
-    <label for="sector">NGO Sector</label>
-    <input type="submit" name="nog_reg" id="">
-  </form>
+  <link rel="stylesheet" href="css/register.css">
+  <div class="container">
+    <div class="title">NGO Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Organization Name</span>
+            <input type="text" placeholder="Enter your Organization name" required>
+          </div>
+          {{!-- <div class="input-box">
+            <span class="details">Organization Name</span>
+            <input type="text" placeholder="Enter your last name" required>
+          </div> --}}
+          <div class="input-box">
+            <span class="details">Organization Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contaxt Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Organization Sector</span>
+            <input type="text" placeholder="Sector" required>
+          </div>
+        </div>
+          <div class="input-box">
+            <span class="details">Organization Description</span>
+            <textarea type="text" placeholder="Enter organization Description" class="address-area"></textarea>
+          </div>
+
+        {{!-- <div class="input-box">
+          <span class="details">Areas of interest</span><br>
+          <select name="" id="">
+            <option value="Agriculaure">Agriculure</option>
+            <option value="Healthcare">Healthcare</option>
+          </select>
+        </div> --}}
+        
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+
+      <div class="linking">
+        <a href="/ngo_login"><h4>Already have an account?</h4></a>
+      </div>
+    </div>
+  </div>
 {{>footer}}
