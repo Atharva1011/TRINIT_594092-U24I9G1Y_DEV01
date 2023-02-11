@@ -14,14 +14,14 @@ router.get("/phila_login", (req, res) => {
 router.post("/phila_login", (req, res) => {
   const valid = true;
   if (valid) {
-    res.render("phila_dash");
+    res.render("phila_dash", { admin: "Atharva D" });
   } else {
     res.redirect("/phila_login");
   }
 });
 
 router.post("/phila_reg", (req, res) => {
-  res.render("phila_dash");
+  res.render("phila_dash", { admin: "Atharva D" });
 });
 
 module.exports = router;
