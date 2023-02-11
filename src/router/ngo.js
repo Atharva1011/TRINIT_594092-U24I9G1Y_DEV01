@@ -2,6 +2,7 @@ const express = require("express");
 const router = new express.Router();
 const mongoose = require("mongoose");
 const Ngo = require("../models/ngo");
+const Activity = require("../models/activity");
 
 router.get("/ngo_reg", (req, res) => {
   res.render("ngo_reg");

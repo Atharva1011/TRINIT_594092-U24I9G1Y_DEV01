@@ -24,7 +24,7 @@ const philaSchema = new mongoose.Schema({
     trim: true,
   },
   donated_ids: {
-    type: Int16Array,
+    type: Number,
   },
   total_amount: {
     type: Number,

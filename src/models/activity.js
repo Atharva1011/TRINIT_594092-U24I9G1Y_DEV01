@@ -44,7 +44,7 @@ const activitySchema = new mongoose.Schema(
     philaInvolved: [
       {
         id: {
-          type: mongoose.Schema.Type.ObjectId,
+          type: mongoose.Schema.Types.ObjectId,
           ref: "Phila",
         },
         name: {

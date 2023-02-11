@@ -2,6 +2,7 @@ const express = require("express");
 const router = new express.Router();
 const mongoose = require("mongoose");
 const Phila = require("../models/phila");
+const Activity = require("../models/activity");
 
 router.get("/phila_reg", (req, res) => {
   res.render("phila_reg");
