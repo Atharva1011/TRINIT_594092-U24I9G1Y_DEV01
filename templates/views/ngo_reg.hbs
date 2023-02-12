@@ -1,13 +1,13 @@
 {{>header}}
-  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="../css/register.css">
   <div class="container">
     <div class="title">NGO Registration</div>
     <div class="content">
-      <form action="#">
+      <form action="/ngo/register" method="post">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Organization Name</span>
-            <input type="text" placeholder="Enter your Organization name" required>
+            <input type="text" name='name' placeholder="Enter your Organization name" required>
           </div>
           {{!-- <div class="input-box">
             <span class="details">Organization Name</span>
@@ -15,28 +15,28 @@
           </div> --}}
           <div class="input-box">
             <span class="details">Organization Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" name="email" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
-            <span class="details">Contaxt Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <span class="details">Contact Number</span>
+            <input type="text" name="mobileNo" placeholder="Enter your number" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <input type="text" name="password" placeholder="Enter your password" required>
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <input type="text" name="secondpassword" placeholder="Confirm your password" required>
           </div>
           <div class="input-box">
             <span class="details">Organization Sector</span>
-            <input type="text" placeholder="Sector" required>
+            <input type="text" name="sector" placeholder="Sector" required>
           </div>
         </div>
           <div class="input-box">
             <span class="details">Organization Description</span>
-            <textarea type="text" placeholder="Enter organization Description" class="address-area"></textarea>
+            <textarea type="text" name="desc"" placeholder="Enter organization Description" class="address-area"></textarea>
           </div>
 
         {{!-- <div class="input-box">
@@ -53,7 +53,7 @@
       </form>
 
       <div class="linking">
-        <a href="/ngo_login"><h4>Already have an account?</h4></a>
+        <a href="/ngo/login"><h4>Already have an account?</h4></a>
       </div>
     </div>
   </div>

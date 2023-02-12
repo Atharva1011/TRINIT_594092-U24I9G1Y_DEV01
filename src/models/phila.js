@@ -1,14 +1,22 @@
 const mongoose = require("mongoose");
 const philaSchema = new mongoose.Schema({
-  name: {
+  firstName: {
     type: String,
     trim: true,
   },
-  email: {
+  lastName: {
     type: String,
     trim: true,
     unique: true,
     lowercase: true,
+  },
+  email: {
+    type: String,
+    max: 50,
+    unique: true,
+  },
+  password:{
+    type: String,
   },
   contact_no: {
     type: String,
@@ -19,12 +27,13 @@ const philaSchema = new mongoose.Schema({
     type: String,
     trim: true,
   },
-  organization_name: {
+  organization: {
     type: String,
     trim: true,
   },
   donated_ids: {
-    type: Number,
+    type: Array,
+    default: [],
   },
   total_amount: {
     type: Number,
