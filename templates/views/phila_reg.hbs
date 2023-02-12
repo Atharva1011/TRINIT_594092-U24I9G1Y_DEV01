@@ -1,56 +1,92 @@
 {{!-- {{>header}} --}}
-  <link rel="stylesheet" href="../css/register.css">
-  <div class="container">
-    <div class="title">Philanthropist Registration</div>
-    <div class="content">
-      <form action="/phila/register" method="post">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">First Name</span>
-            <input type="text" name="firstName" placeholder="Enter your first name" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Last Name</span>
-            <input type="text" name="lastName" placeholder="Enter your last name" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text" name="email" placeholder="Enter your email" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" name="contact_no" placeholder="Enter your number" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Password</span>
-            <input type="text" name="password" placeholder="Enter your password" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="text" name="secondPassword" placeholder="Confirm your password" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Organization Name(If an individual keep it blank)</span>
-            <input type="text" name="organization" placeholder="Enter organization name" required>
-          </div>
-        </div>
-
+<link rel="stylesheet" href="../css/register.css" />
+<div class="container">
+  <div class="title">Philanthropist Registration</div>
+  <div class="content">
+    <form action="/phila/register" method="post">
+      <div class="user-details">
         <div class="input-box">
-          <span class="details">Areas of interest</span><br>
-          <select name="" id="">
-            <option value="Agriculaure">Agriculure</option>
-            <option value="Healthcare">Healthcare</option>
-          </select>
+          <span class="details">First Name</span>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="Enter your first name"
+            required
+          />
         </div>
-        
-        <div class="button">
-          <input type="submit" value="Register">
+        <div class="input-box">
+          <span class="details">Last Name</span>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Enter your last name"
+            required
+          />
         </div>
-      </form>
-
-      <div class="linking">
-        <a href="/phila_login"><h4>Already have an account?</h4></a>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input
+            type="text"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <span class="details">Phone Number</span>
+          <input
+            type="text"
+            name="contact_no"
+            placeholder="Enter your number"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input
+            type="text"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <span class="details">Confirm Password</span>
+          <input
+            type="text"
+            name="secondPassword"
+            placeholder="Confirm your password"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <span class="details">Organization Name(If an individual keep it
+            blank)</span>
+          <input
+            type="text"
+            name="organization"
+            placeholder="Enter organization name"
+            required
+          />
+        </div>
       </div>
+
+      <div class="input-box">
+        <span class="details">Areas of interest</span><br />
+        <select name="" id="">
+          <option value="Agriculaure">Agriculure</option>
+          <option value="Healthcare">Healthcare</option>
+        </select>
+      </div>
+
+      <div class="button">
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+
+    <div class="linking">
+      <a href="/phila/login"><h4>Already have an account?</h4></a>
     </div>
   </div>
+</div>
 {{!-- {{>footer}} --}}
